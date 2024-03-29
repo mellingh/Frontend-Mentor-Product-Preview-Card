@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  min-width: 375px;
+}
+
+.desktopImg {
+  display: none;
+}
+
+.mobileImg {
+  display: block;
+  max-width: 22rem;
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.productContent {
+  max-height: 25rem;
+  max-width: 22rem;
+  padding: 1.8rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0 0.7rem 0.7rem;
+}
+
+.productCategory {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.productTitle {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  line-height: 2rem;
+}
+
+.productDescription {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 1.5rem;
+  line-height: 1.4rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.discountPrice {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.usualPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.addToCartBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.addToCartBtn:hover {
+  cursor: pointer;
+  background-color: hsl(155, 30%, 25%);
+}
+
+@media screen and (min-width: 650px) {
+  .container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 18rem 18rem;
+  }
+
+  .mobileImg {
+    display: none;
+  }
+
+  .productContent {
+    max-height: 30rem;
+    max-width: 18rem;
+    padding: 1.8rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
+
+  .desktopImg {
+    display: block;
+    max-width: 18rem;
+    max-height: 30rem;
+    border-radius: 0.7rem 0 0 0.7rem;
+  }
+}
